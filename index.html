@@ -1,261 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akhil Sravan Ketha - Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- Navigation -->
-  <nav>
-    <div class="nav-brand">Akhil Sravan Ketha</div>
-    <ul class="nav-links">
-      <li><a href="#" onclick="showSection('home')">Home</a></li>
-      <li><a href="#" onclick="showSection('about')">About</a></li>
-      <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-      <li><a href="#" onclick="showSection('skills')">Skills</a></li>
-      <li><a href="#" onclick="showSection('experience')">Experience</a></li>
-      <li><a href="#" onclick="showSection('contact')">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-      <a href="https://github.com/AKHILSRAVAN-KETHA" class="social-link" target="_blank">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg>
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akhil Sravan Ketha - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-brand">Akhil Sravan Ketha</div>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        <a
+          href="https://github.com/AKHILSRAVAN-KETHA"
+          class="social-link"
+          target="_blank"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Home Section -->
+      <section id="home" class="section active">
+        <div class="hero">
+          <img
+            src="./Images/akhil.png"
+            alt="Akhil Sravan Ketha"
+            class="profile-img"
+          />
+          <h1>Akhil Sravan Ketha</h1>
+          <div class="tagline">A coder by day, problem-solver by night! 💻</div>
+          <p>
+            I am a dedicated Senior Application Engineer with a proven track
+            record at Oracle India. Passionate about building beautiful and
+            functional web applications using modern technologies like React,
+            Node.js, and JavaScript. Recognized for optimizing application
+            performance, mentoring teams, and delivering innovative solutions
+            that enhance user experiences.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="showSection('contact')">
+              Get In Touch
+            </button>
+            <button class="btn btn-secondary" onclick="showSection('about')">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="./Images/akhil.png" alt="Akhil Sravan Ketha" />
+          </div>
+          <div class="about-text">
+            <h2>Who Am I?</h2>
+            <p>
+              I'm a Senior Application Engineer with extensive experience in
+              full-stack web development. At Oracle India, I've had the
+              opportunity to work on enterprise-level applications, optimizing
+              performance, and leading technical initiatives.
+            </p>
+            <p>
+              My passion lies in creating intuitive, responsive web interfaces
+              and robust backend systems. I believe in writing clean,
+              maintainable code and following best practices in software
+              development.
+            </p>
+            <p>
+              Beyond coding, I'm an advocate for knowledge sharing and
+              mentoring. I enjoy collaborating with teams, learning from
+              colleagues, and staying updated with the latest trends in web
+              technologies.
+            </p>
+            <p style="margin-top: 2rem">
+              When I'm not coding, you can find me exploring new technologies,
+              contributing to open-source, or solving challenging problems that
+              push the boundaries of what's possible.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem">
+          Featured Projects
+        </h2>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Dynamically generated from JavaScript -->
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem">Skills & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>REST APIs</li>
+              <li>Database Design</li>
+              <li>Authentication</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Others</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>MongoDB</li>
+              <li>VS Code</li>
+              <li>Problem Solving</li>
+              <li>Team Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 3rem">Experience</h2>
+        <div id="experienceContainer">
+          <!-- Dynamically generated from JavaScript -->
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="contact-content">
+          <h2>Get In Touch</h2>
+          <p>
+            I'm always open to new opportunities and collaborations. Feel free
+            to reach out through any of the following channels.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:akhilsravan.ketha@gmail.com" class="contact-item">
+              <strong>📧 Email</strong><br />
+              akhilsravan.ketha@gmail.com
+            </a>
+            <a href="tel:+919381659324" class="contact-item">
+              <strong>📱 Phone</strong><br />
+              (+91) 9381659324
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-item">
+              <strong>💼 LinkedIn</strong><br />
+              LinkedIn Profile
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
-  </nav>
 
-  <div class="container">
-    <!-- Home Section -->
-    <section id="home" class="section active">
-      <div class="hero">
-        <img src="./Images/akhil.png" alt="Akhil Sravan Ketha" class="profile-img" />
-        <h1>Akhil Sravan Ketha</h1>
-        <div class="tagline">A coder by day, problem-solver by night! 💻</div>
-        <p>
-          I am a dedicated Senior Application Engineer with a proven track record at Oracle India. 
-          Passionate about building beautiful and functional web applications using modern technologies 
-          like React, Node.js, and JavaScript. Recognized for optimizing application performance, 
-          mentoring teams, and delivering innovative solutions that enhance user experiences.
-        </p>
-        <div class="hero-buttons">
-          <button class="btn btn-primary" onclick="showSection('contact')">Get In Touch</button>
-          <button class="btn btn-secondary" onclick="showSection('about')">Learn More</button>
-        </div>
-      </div>
-    </section>
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Akhil Sravan Ketha. All rights reserved.</p>
+      <p>Built with HTML5, CSS3, and JavaScript. Deployed on GitHub Pages.</p>
+    </footer>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">About Me</h2>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="./Images/akhil.png" alt="Akhil Sravan Ketha" />
-        </div>
-        <div class="about-text">
-          <h2>Who Am I?</h2>
-          <p>
-            I'm a Senior Application Engineer with extensive experience in full-stack web development. 
-            At Oracle India, I've had the opportunity to work on enterprise-level applications, 
-            optimizing performance, and leading technical initiatives.
-          </p>
-          <p>
-            My passion lies in creating intuitive, responsive web interfaces and robust backend systems. 
-            I believe in writing clean, maintainable code and following best practices in software development.
-          </p>
-          <p>
-            Beyond coding, I'm an advocate for knowledge sharing and mentoring. I enjoy collaborating with 
-            teams, learning from colleagues, and staying updated with the latest trends in web technologies.
-          </p>
-          <p style="margin-top: 2rem;">
-            When I'm not coding, you can find me exploring new technologies, contributing to open-source, 
-            or solving challenging problems that push the boundaries of what's possible.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>
-            A modern, responsive portfolio website built with HTML, CSS, and JavaScript. 
-            Features dark mode support, smooth navigation, and optimized for all devices.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">JavaScript</span>
-          </div>
-        </div>
-        <div class="project-card">
-          <h3>React E-Commerce App</h3>
-          <p>
-            Full-featured e-commerce application with product filtering, cart management, 
-            and payment integration using React and Node.js backend.
-          </p>
-          <div class="project-tags">
-            <span class="tag">React</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">MongoDB</span>
-          </div>
-        </div>
-        <div class="project-card">
-          <h3>Task Management API</h3>
-          <p>
-            RESTful API for task management with authentication, CRUD operations, 
-            and database integration. Built with Express.js and MongoDB.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
-            <span class="tag">REST API</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Skills & Tools</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Frontend</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>Responsive Design</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Backend</h3>
-          <ul>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>REST APIs</li>
-            <li>Database Design</li>
-            <li>Authentication</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Tools & Others</h3>
-          <ul>
-            <li>Git & GitHub</li>
-            <li>MongoDB</li>
-            <li>VS Code</li>
-            <li>Problem Solving</li>
-            <li>Team Leadership</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-      <h2 style="font-size: 2.5rem; margin-bottom: 3rem;">Experience</h2>
-      
-      <div class="experience-item">
-        <h3>Senior Application Engineer</h3>
-        <div class="position">Oracle India</div>
-        <div class="date">2019 - Present</div>
-        <p>
-          Led development of multiple enterprise applications. Optimized application performance, 
-          mentored junior developers, and implemented best practices in software development. 
-          Collaborated with cross-functional teams to deliver high-quality solutions.
-        </p>
-      </div>
-
-      <div class="experience-item">
-        <h3>Application Developer</h3>
-        <div class="position">Oracle India</div>
-        <div class="date">2017 - 2019</div>
-        <p>
-          Developed and maintained Java-based applications. Implemented responsive UI components 
-          using modern technologies. Participated in code reviews and contributed to technical documentation.
-        </p>
-      </div>
-
-      <div class="experience-item">
-        <h3>Junior Developer</h3>
-        <div class="position">Oracle India</div>
-        <div class="date">2016 - 2017</div>
-        <p>
-          Started my professional journey at Oracle. Learned best practices in software development, 
-          contributed to various projects, and developed strong fundamentals in programming.
-        </p>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="contact-content">
-        <h2>Get In Touch</h2>
-        <p>
-          I'm always open to new opportunities and collaborations. 
-          Feel free to reach out through any of the following channels.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:akhilsravan.ketha@gmail.com" class="contact-item">
-            <strong>📧 Email</strong><br>
-            akhilsravan.ketha@gmail.com
-          </a>
-          <a href="tel:+919381659324" class="contact-item">
-            <strong>📱 Phone</strong><br>
-            (+91) 9381659324
-          </a>
-          <a href="https://linkedin.com" target="_blank" class="contact-item">
-            <strong>💼 LinkedIn</strong><br>
-            LinkedIn Profile
-          </a>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 Akhil Sravan Ketha. All rights reserved.</p>
-    <p>Built with HTML5, CSS3, and JavaScript. Deployed on GitHub Pages.</p>
-  </footer>
-
-  <script>
-    // Theme toggle
-    function toggleTheme() {
-      document.body.classList.toggle('dark-mode');
-      const themeToggle = document.querySelector('.theme-toggle');
-      const isDarkMode = document.body.classList.contains('dark-mode');
-      themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
-      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-    }
-
-    // Section navigation
-    function showSection(sectionId) {
-      // Hide all sections
-      document.querySelectorAll('.section').forEach(section => {
-        section.classList.remove('active');
-      });
-      // Show selected section
-      document.getElementById(sectionId).classList.add('active');
-      // Scroll to top
-      window.scrollTo(0, 0);
-    }
-
-    // Load saved theme
-    window.addEventListener('load', () => {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        document.querySelector('.theme-toggle').textContent = '☀️';
-      }
-    });
-  </script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
